@@ -1,0 +1,213 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-image: url(https://wallpapercave.com/wp/wp2497051.png);
+  background-size: cover; /* Ensure the background image covers the entire viewport */
+  background-position: center;
+  background-attachment: fixed; /* Keep the background image fixed while scrolling */
+
+  padding: 10px;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: rgba(184, 178, 178, 0.311);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif; /* Modern and clean font */
+  font-size: 1.9rem; /* Larger font size */
+  color: black; /* Dark blue-gray color */
+  text-align: center; /* Center the text */
+  margin: 10px 0; /* Add space above and below */
+  padding: 10px; /* Add padding inside the h2 */
+  border-radius: 6px; /* Rounded corners */
+  letter-spacing: 1.5px; /* Spacing between letters */
+  font-weight: bold; /* Bold text */
+}
+
+label {
+  font-family: 'Arial', sans-serif; /* Clean font */
+  font-size: 1.2rem; /* Slightly larger font for the label */
+  color: #34495e; /* Dark gray-blue color */
+  margin-right: 10px; /* Space between label and input */
+  font-weight: 450; /* Bold text */
+}
+
+input[type='text'] {
+  width: 70%;
+  padding: 12px; /* More padding for better appearance */
+  margin: 10px 0;
+  background-color:transparent;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease; /* Smooth transition for focus effect */
+}
+
+input[type='text']:focus {
+  border-color: #3498db; /* Blue border on focus */
+  outline: none;
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.6); /* Focus shadow */
+}
+
+input::placeholder {
+  color: #95a5a6; /* Placeholder text color */
+  font-style: oblique; /* Italic style for the placeholder */
+}
+
+button {
+  padding: 13px 20px;
+  background: linear-gradient(
+    to right,
+    #3498db,
+    #2980b9
+  ); /* Blue gradient background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: linear-gradient(
+    to right,
+    #2980b9,
+    #3498db
+  ); /* Reverse blue gradient on hover */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 2px solid #ddd;
+  font-size: 1.09rem;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  /* background: linear-gradient(to right, #36d1dc, #5b86e5); */
+  color: rgb(18, 14, 14);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.flag {
+  width: 250px;
+  display: block;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.map-container {
+  margin-top: 30px;
+}
+.maplabel {
+  font-family: 'Arial', sans-serif; /* Font for the label */
+  font-size: 1.5rem; /* Font size for the label */
+  color: #34495e; /* Dark gray-blue color */
+  font-weight: bold; /* Bold text */
+  display: block; /* Block display to ensure the label appears above the iframe */
+  margin-bottom: 4px; /* Space below the label */
+}
+
+iframe {
+  width: 100%; /* Full width of its container */
+  max-width: 1200px; /* Limit width for better appearance on larger screens */
+  height: 300px; /* Fixed height for the map */
+  border: none; /* Remove default iframe border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for the iframe */
+  margin-top: 10px; /* Space above the iframe */
+  border-radius: 4px;
+}
+.wikipedia-link {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.wikipedia-link a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.wikipedia-link a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  label,
+  input[type='text'] {
+    font-size: 1.1rem;
+  }
+
+  input[type='text'] {
+    width: 80%;
+  }
+
+  button {
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+
+  table {
+    font-size: 1rem;
+  }
+
+  th,
+  td {
+    padding: 8px;
+  }
+
+  iframe {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.5rem;
+    margin-top: auto;
+  }
+
+  input[type='text'] {
+    width: 62%;
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  button {
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  th,
+  td {
+    padding: 6px;
+  }
+
+  iframe {
+    height: 200px;
+  }
+}
